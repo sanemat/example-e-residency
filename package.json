@@ -8,7 +8,8 @@
   },
   "private": true,
   "scripts": {
+    "build": "webpack",
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\"",
-    "test": "exit 0"
+    "test": "npm run build && exit 0"
   }
 }
