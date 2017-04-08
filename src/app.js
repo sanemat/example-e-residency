@@ -10,6 +10,6 @@ function debug() {
     });
 }
 
-document.getElementById('click2').addEventListener('click', function() {
+document.getElementById('click2').addEventListener('click', () => {
   debug();
 });
