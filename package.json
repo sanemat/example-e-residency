@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "devDependencies": {
     "bower": "^1.8.0",
-    "bower-resolve-webpack-plugin": "^1.0.2",
     "webpack": "^2.3.3"
   },
   "private": true,
   "scripts": {
     "build": "webpack",
+    "postinstall": "bower install",
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\"",
     "test": "npm run build && exit 0"
   }
